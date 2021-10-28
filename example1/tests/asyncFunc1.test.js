@@ -13,7 +13,7 @@ function someMadeUpAyncFunc(boolValue, cb) {
 }
 
 // Added the `only` tag to have only this set of tests to run
-describe.only("AsyncTest", function () {
+describe.only("Promisify AsyncTest", function () {
   it("should return `You get a sweet :)` if `true` is passed in", function () {
     return expect(someMadeUpAyncFunc(true)).to.eventually.equal(
       "You get a sweet :)"
